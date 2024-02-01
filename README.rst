@@ -13,4 +13,4 @@ To bundle the lua scripts and run the simulation:
 
 .. code-block:: console
     
-    sh run simulation
+    sh run_simulation.sh
