@@ -10,7 +10,7 @@ parser = argparse.ArgumentParser(
 )
 
 parser.add_argument('-s', '--source', default='src/main.lua')
-parser.add_argument('-t', '--target', default='scripts/bundle.lua')
+parser.add_argument('-t', '--target', default='sitl/scripts/bundle.lua')
 parser.add_argument('-w', '--workdir', default='src')
 
 args = parser.parse_args()
