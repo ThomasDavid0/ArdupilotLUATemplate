@@ -30,10 +30,10 @@ def parse_require_statement(line):
         local *** = require("sdxvsvd")
         local *** = require "sdxvsvd"    
     '''
-    cols = line.split('=')
+    cols = line.split('require')
     assert len(cols) <= 2
     
-    rhs = cols[-1].replace('require','')
+    rhs = cols[-1]
     
     file = rhs.strip("('')"" \n")
     if not '.lua' in file: 
